@@ -29,6 +29,9 @@ def get_image(idol_id: int, attribute: str, hash: str):
         req = Request(MOBAGE_URL, data.encode('utf-8'))
         with urlopen(req) as res:
             buff = res.read()
+            if redis is not None:
+                redis.set(key, buff)
+                redis.expire(key, 604800)
     
     # 画像データ読み込み
     try:
