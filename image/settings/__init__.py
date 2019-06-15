@@ -1,0 +1,1 @@
+from image.settings.default import *
