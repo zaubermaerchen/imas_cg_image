@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.urls import path
-from idol import views
+from .views import View
 
 urlpatterns = [
-    path('<int:idol_id>', views.show),
-    path('<int:idol_id>/', views.show),
-    path('<str:size>/<int:idol_id>', views.show),
-    path('<str:size>/<int:idol_id>/', views.show),
+    path('<int:idol_id>', View.as_view()),
+    path('<int:idol_id>/', View.as_view()),
+    path('<str:size>/<int:idol_id>', View.as_view()),
+    path('<str:size>/<int:idol_id>/', View.as_view()),
 ]
