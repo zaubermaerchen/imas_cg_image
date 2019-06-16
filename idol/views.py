@@ -39,9 +39,8 @@ class View(View):
             image = Image.open(io.BytesIO(buff))
         except IOError:
             image = None
-            if redis is not None:
-                redis.set(key, buff)
-                redis.expire(key, 604800)
+            if redis is not None and redis.exists(key):
+                redis.delete(key)
 
         return image
 
