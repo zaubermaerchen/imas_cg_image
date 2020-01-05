@@ -4,6 +4,8 @@ services:
     build: ./docker/app
     ports:
       - 8000:8000
+    environment:
+      DJANGO_SETTINGS_MODULE: "image.settings.docker"
     volumes:
       - type: bind
         source: ./

@@ -1,6 +1,5 @@
 FROM python:alpine
 ENV PYTHONUNBUFFERED 1
-ENV DJANGO_SETTINGS_MODULE image.settings.docker
 ADD requirements.txt .
 RUN apk add --no-cache gcc musl-dev jpeg-dev zlib-dev \
     && pip install --upgrade pip \
