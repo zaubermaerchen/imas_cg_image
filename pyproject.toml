@@ -11,6 +11,7 @@ django = "^3.2"
 django-cors-headers = "^3.10"
 django-redis = "^5.2"
 Pillow = "^9.0"
+pylibmc = "^1.6.1"
 
 [tool.poetry.dev-dependencies]
 
