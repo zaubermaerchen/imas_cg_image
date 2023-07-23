@@ -116,7 +116,7 @@ IMAGE_SETTINGS = {
     },
 }
 
-IMAGE_URL_FORMAT = 'http://mobamas.net/idolmaster/image_sp/card/%s/%s.jpg'
+IMAGE_URL_FORMAT = 'https://zaubermaerchen.info/imas_cg/image/card/%s/%s.jpg'
 MOBAGE_URL = 'http://sp.pf-img-a.mbga.jp/12008305'
 IDOL_DATA_API_URL_FORMAT = 'https://zaubermaerchen.info/imas_cg/api/idol/%d'
 IMAGE_REDIS_KEY_FORMAT = 'imas_cg:image:%s:%s'
